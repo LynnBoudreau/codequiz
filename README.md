@@ -25,7 +25,12 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 Installation: Required HTML, CSS, JavaScript to build the Code Quiz
-Usage:  The Code Quiz is my 4th homework assignment for UNH Coding Bootcamp 2020
-Credits:
+//
+Usage:  Test your coding skills; #4 Homework Assignment UNH CBC 03/2020
+//
+Credits: 
+//
 Licenses:
+//
+#codequiz link to published page:  https://lynnboudreau.github.io/codequiz/
 

@@ -10,7 +10,7 @@ var questions = [
       answer: "parentheses"
     },
     {
-      title: "Arrays in JavaScript can be used to store ____.",
+      title: "Arrays (the special kind of Object) in JavaScript can be used to store ____.",
       choices: [
         "numbers and strings",
         "other arrays",

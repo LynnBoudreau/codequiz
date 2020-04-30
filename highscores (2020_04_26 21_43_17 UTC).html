@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>highscores</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>High Scores</h1>
+        <div id="count"></div>
+        <script>
+            var count = localStorage.getItem("count");
+            var countElement = document.querySelector("#count");
+            countElement.textContent = count;
+
+        </script>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,7 @@
 # codequiz
 #4 Homework Assignment: codequiz
 UNH CBC 03/2020
-
 ```
-
-
-
 ## User Story
 
 ```
@@ -36,7 +32,9 @@ Usage:  Test one's coding skills;
 Credits: Lynn Boudreau, UNH CB, my instructor, and teaching assistants, as well as my tutor 
 //
 Licenses:none
-//
-#codequiz link to published page:  https://lynnboudreau.github.io/codequiz/
 
 ```
+//
+#codequiz link to published page:  https://lynnboudreau.github.io/codequiz/
+//
+

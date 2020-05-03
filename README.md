@@ -9,6 +9,6 @@ UNH CBC 03/2020
 
 #Credits: Lynn Boudreau, UNH CB, my instructor, and teaching assistants, as well as my tutor
 
-#Licenses:none
+#Licenses: none
 
 Link to published page: https://lynnboudreau.github.io/codequiz/

@@ -1,37 +1,29 @@
-//  when the user first accesses the page, they are shown an intro message
-//  in the HTML we could have a <div> with the introduction
-//
-//  users can click the start button, which will start the game timer
-var counter = document.querySelector("#counter");
-var subtractButton = document.querySelector("#subtract");
+function printHighscores() {
+  // either get scores from localstorage or set to empty array
+  var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
+  // sort highscores by score property in descending order
+  highscores.sort(function (a, b) {
+    return b.score - a.score;
+  });
 
-var count = localStorage.getItem("count");
-counter.textContent = count;
+  highscores.forEach(function (score) {
+    // create li tag for each high score
+    var liTag = document.createElement("li");
+    liTag.textContent = score.initials + " - " + score.score;
 
+    // display on page
+    var olEl = document.getElementById("highscores");
+    olEl.appendChild(liTag);
+  });
+}
 
-subtractButton.addEventListener("click", function () {
-    if (count > 0) {
+function clearHighscores() {
+  window.localStorage.removeItem("highscores");
+  window.location.reload();
+}
 
-    }
-    count = --;
-    counterElement.textContent = count;
+document.getElementById("clear").onclick = clearHighscores;
 
-    localStorage.setItem("count", count);
-});
-
-//
-//  variable to store the current count, set to 0 by default
-
-//  variable to store the array of questions
-//  variable to store the index of the current question they are answering
-//
-//
-//
-//
-//      
-//
-//
-//
-//      
-//     
+// run function when page loads
+printHighscores();

@@ -10,11 +10,17 @@
   <body>
     <div class="wrapper">
       <h1>Highscores</h1>
+      <div id="count"></div>
       <ol id="highscores.html"></ol>
 
       <a href="index.html"><button>Go Back</button></a>
       <button id="clear">Clear Highscores</button>
     </div>
+    <script>
+      var count = localStorage.getItem("count");
+      var countElement = document.querySelector("#count");
+      countElement.textContent = count;
+    </script>
 
     <script src="./assets/js/scores.js"></script>
   </body>
